@@ -1,14 +1,14 @@
 ```mermaid
 flowchart TD
 A([Start]) --> B[Generate Random Number]
-B --> C[Ask for User Guess]
-C --> D {Is Input Valid?}
+B --> C[Ask for the  user guess]
+C --> D{Is the input valid?}
 D --> |Yes| E[Check Guess]
-D --> |No| F[Display "Invalid Input"]
+D --> |No| F[Invalid Input]
 F --> C
-E --> |Correct| G[Display "Win!"]
-E --> |Too High| H[Display "Too High"]
-E --> |Too Low| I[Display "Too Low"]
+E --> |Correct Number| G[Win!]
+E --> |Number too high| H[Display: Too High]
+E --> |Number too low| I[Display: Too Low]
 H --> C
 I --> C
 G --> J([End])
